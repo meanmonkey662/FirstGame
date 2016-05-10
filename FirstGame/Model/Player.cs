@@ -2,7 +2,7 @@
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 
-namespace FirstGame
+namespace FirstGame.Model
 {
 	public class Player
 	{
@@ -17,17 +17,17 @@ namespace FirstGame
 		public Vector2 Position;
 
 		// State of the player
-		public bool Active;
+		public bool Active
 		{
-			get { return active; }
-			set { health = value; }
+			get{ return active; }
+			set{ active = value; }
 		}
 
 		// Amount of hit points that player has
-		public int Health;
+		public int Health
 		{
-			get { return active; }
-			set { health = value; }
+			get{ return health; }
+			set{ health = value; }
 		}
 
 		// Get the width of the player ship
@@ -71,6 +71,6 @@ namespace FirstGame
 		{
 
 		}
-
+			
+	}
 }
-
